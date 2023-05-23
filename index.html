@@ -8,6 +8,8 @@
     <title>HBO</title>
     <link rel="shortcut icon" href="./images/hbo-logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./node_modules/atropos/atropos.css" />
+
 </head>
 
 <body>
@@ -33,23 +35,70 @@
     </header>
 
     <div class="container">
-        <div class="title">
-            <h1>Descubra
-                <br> Conecte-se e
-                <br> emocione-se
-            </h1>
-        </div>
+        <h1 class="title">Descubra
+            <br> Conecte-se e
+            <br> emocione-se
+        </h1>
 
-        <div class="content">
-            <h2 class="slogan">Encontre os lançamentos de filmes imperdíveis e viva emoções incríveis</h2>
-        </div>
+        <h2 class="slogan">Encontre os lançamentos de filmes imperdíveis e viva emoções incríveis</h2>
 
-        <div class="bottons">
+        <div class="buttons">
             <button class="btn1">Começar</button>
             <button class="btn2">Planos</button>
         </div>
     </div>
 
+    <div class="cards-container">
+        <div class="subtitle">
+            <p>Principais características</p>
+        </div>
+
+        <div class="cards">
+            <div class="card card-1 atropos my-atropos">
+                <strong>Lorem Ipsum</strong>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis exercitationem amet.</p>
+            </div>
+            <div class="card card-2 atropos my-atropos">
+                <strong>Lorem Ipsum</strong>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis exercitationem amet.</p>
+            </div>
+            <div class="card card-3 atropos my-atropos">
+                <strong>Lorem Ipsum</strong>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis exercitationem amet.</p>
+            </div>
+            <div class="card card-4 atropos my-atropos">
+                <strong>Lorem Ipsum</strong>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis exercitationem amet.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="movies-container">
+        <div class="subtitle">
+            <p>Filmes mais aclamados e esperados</p>
+        </div>
+
+        <div class="movies">
+            <img src="./images/movie1.jpg" alt="" class="movie">
+            <img src="./images/movie2.jpg" alt="" class="movie">
+            <img src="./images/movie3.jpg" alt="" class="movie">
+            <img src="./images/movie4.jpeg" alt="" class="movie">
+            <img src="./images/movie5.jpeg" alt="" class="movie">
+            <img src="./images/movie6.jpeg" alt="" class="movie">
+        </div>
+    </div>
+
+    <footer>
+        <p>Desenvolvido por Otávio Silva 🙃</p>
+    </footer>
+
+    <script src="./script.js"></script>
+    <script src="./node_modules/atropos/atropos.min.js"></script>
+    <script>
+            const myAtropos = Atropos({
+              el: '.my-atropos',
+            });
+          </script>
 </body>
 
 </html>
